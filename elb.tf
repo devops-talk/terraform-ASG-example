@@ -1,7 +1,7 @@
 resource "aws_elb" "web_elb" {
   name = "web-elb"
   security_groups = [
-    "${aws_security_group.websg1.id}"
+    "${aws_security_group.webelbsg.id}"
   ]
   subnets = [
     "${aws_subnet.websubnet.id}",

@@ -1,7 +1,7 @@
 # Creating Security Group for ELB
-resource "aws_security_group" "websg1" {
-  name        = "Demo Security Group"
-  description = "Demo Module"
+resource "aws_security_group" "webelbsg" {
+  name        = "Security Group"
+  description = "Module"
   vpc_id      = "${aws_vpc.webvpc.id}"
 # Inbound Rules
   # HTTP access from anywhere
